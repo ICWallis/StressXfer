@@ -1,3 +1,6 @@
+# Local bits to ignore
+/THG_StressXfer
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
