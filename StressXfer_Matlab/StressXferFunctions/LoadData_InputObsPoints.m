@@ -1,4 +1,4 @@
-function [P1,P2,P3,FaceNormalVector,Z_Fault,FaultMidPoint,FaultTriangles,FaultPoints,X_Obs,Y_Obs,Z_Obs,X_cont,Y_cont,Z_cont] = LoadData_AutoGenObsPoints(Faults,X_ObsMax,Y_ObsMax,Z_ObsMax,X_ObsMin,Y_ObsMin,Z_ObsMin,path,FaultFileString,increment)
+function [P1,P2,P3,FaceNormalVector,Z_Fault,FaultMidPoint,FaultTriangles,FaultPoints,X_Obs,Y_Obs,Z_Obs,X_cont,Y_cont] = LoadData_InputObsPoints(Faults,ObservationPoints,path,FaultFileString,increment)
 %This function loads the data needed for the stress transfer modeling
 %function 'RunAll.m'
 
@@ -89,6 +89,18 @@ addpath(genpath(path))
 %https://doi.org/10.5281/zenodo.3694164. It is slightly adapted for use in 
 %this function
 
+[X_Obs,Y_Obs,Z_Obs,ObsPoints]...
+    = LoadObservationPoints(ObservationPoints,Z_Fault);
+
+X_ObsMin = min(X_Obs);
+X_ObsMax = max(X_Obs);
+
+Y_ObsMin = min(Y_Obs);
+Y_ObsMax = max(Y_Obs);
+
+Z_ObsMin = min(Z_Obs);
+Z_ObsMax = max(Z_Obs);
+
 X_cont = (X_ObsMin:increment:X_ObsMax);
 Y_cont = (Y_ObsMin:increment:Y_ObsMax);
 Z_cont = (Z_ObsMin:increment:Z_ObsMax);
@@ -101,7 +113,7 @@ Z_Obs = reshape(Z_cont,sz,1);
 
 %This code prints the number of fault facets
 NumberofFaultFacets = length(FaceNormalVector)
-NumberofObservationPoints = length(Z_Obs)
+NumberofObservationPoints = length(ObsPoints)
 
 %This code plots  a figure that shows the faults and the observation
 %points and saves it in the 'OutputFigures' folder. The normals to the

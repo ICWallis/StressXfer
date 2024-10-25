@@ -149,8 +149,8 @@ writetable(FaultSlipModel, filename2,'WriteVariableNames', true);
 % filename2 = strcat('OutputData/',filename);
 % save(filename2)
 
-% Location = {'OutputFigures/'};
-%    PlotSlipDistribution3d(FaultTriangles,FaultPoints,cmap2,Location,FaultFileString,Dds,Dss,Dn)
+ %Location = {'OutputFigures/'};
+  % PlotSlipDistribution3d(FaultTriangles,FaultPoints,cmap2,Location,FaultFileString,Dds,Dss,Dn)
    
 [rows, ~] = find(isnan(Dss));
 Nans = unique(rows);
@@ -162,7 +162,7 @@ Dn(Nans(i,:)) = zeros;
 Dds(Nans(i,:)) = zeros;
 end
 [rows, ~] = find(isnan(Dds));
-Nans = unique(rows)
+Nans = unique(rows);
 
 meen = mean(Dds);
 stand = std(Dds);
@@ -178,9 +178,9 @@ DipSlip = figure;
 trisurf(FaultTriangles,FaultPoints(:,2),FaultPoints(:,3),FaultPoints(:,4),Dds);
     xlabel('x'); ylabel('y'); axis('equal');
     view(-45,25)
-colormap
-cmocean('curl')
-colorbar('eastoutside')
+colormap;
+cmocean('curl');
+colorbar('eastoutside');
 clim([-abs(Range) abs(Range)]);
 str = append("OutputFigures/",FaultFileString,"DipSlip");
 title({'\fontsize{14}DsDisp','\fontsize{8}Positive (red) is normal faulting, negative (green) is reverse faulting'})
@@ -200,9 +200,9 @@ StrikeSlip = figure;
 trisurf(FaultTriangles,FaultPoints(:,2),FaultPoints(:,3),FaultPoints(:,4),Dss);
     xlabel('x'); ylabel('y'); axis('equal');
     view(-45,25)
-colormap
-cmocean('delta')
-colorbar('eastoutside')
+colormap;
+cmocean('delta');
+colorbar('eastoutside');
 clim([-abs(Range) abs(Range)]);
 str = append("OutputFigures/",FaultFileString,"StrikeSlip");
 title({'\fontsize{14}DsDisp','\fontsize{8}Positive (green) is right-lateral strike-slipe faulting, negative (blue) is left-lateral strike-slipe faulting'})
@@ -222,9 +222,9 @@ Dilatation = figure;
 trisurf(FaultTriangles,FaultPoints(:,2),FaultPoints(:,3),FaultPoints(:,4),Dn);
     xlabel('x'); ylabel('y'); axis('equal');
     view(-45,25)
-colormap
-cmocean('-balance')
-colorbar('eastoutside')
+colormap;
+cmocean('-balance');
+colorbar('eastoutside');
 clim([-abs(Range) abs(Range)]);
 str = append("OutputFigures/",FaultFileString,"Dilatation");
 title({'\fontsize{14}DsDisp','\fontsize{8}Positive (blue) is opening, negative (red) shortening'})

@@ -1,0 +1,298 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <origin>Drew L. Siler</origin>
+        <pubdate>20221121</pubdate>
+        <title>Displacement transfer zone faults</title>
+        <geoform>tabular digital data</geoform>
+        <onlink>https://doi.org/10.5066/xxxxxxxx</onlink>
+        <lworkcit>
+          <citeinfo>
+            <origin>Drew L. Siler</origin>
+            <pubdate>20221121</pubdate>
+            <title>Structural discontinuities and their control on hydrothermal systems in the Great Basin, USA</title>
+            <geoform>publication</geoform>
+          </citeinfo>
+        </lworkcit>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>This digital dataset is the accommodation zone faults dataset. This digital dataset is an XYZ dataset. This file is an ASCII file in GOCAD Triangulated Surfaces (.ts) format. Note that this input fault (.ts file) has geographical coordinates so that it can easily be plotted in GIS software, these are synthetic data and not meant to represent any 'real world' location(s).  Read the metadata carefully before trying to use this file.</abstract>
+      <purpose>This file is meant to be used for the stress transfer modeling MATLAB functions called by RunAll.m</purpose>
+    </descript>
+    <timeperd>
+      <timeinfo>
+        <sngdate>
+          <caldate>20221121</caldate>
+        </sngdate>
+      </timeinfo>
+      <current>publication date</current>
+    </timeperd>
+    <status>
+      <progress>Complete</progress>
+      <update>None planned</update>
+    </status>
+    <spdom>
+      <bounding>
+        <westbc>-117.7357</westbc>
+        <eastbc>-117.5044</eastbc>
+        <northbc>39.6740</northbc>
+        <southbc>39.4926</southbc>
+      </bounding>
+    </spdom>
+    <keywords>
+      <theme>
+        <themekt>ISO 19115 Topic Category</themekt>
+        <themekey>biota</themekey>
+      </theme>
+      <theme>
+        <themekt>USGS Thesaurus</themekt>
+        <themekey>fault</themekey>
+        <themekey>stress</themekey>
+        <themekey>strain</themekey>
+        <themekey>dilatation</themekey>
+        <themekey>slip modeling</themekey>
+        <themekey>hydrothermal</themekey>
+        <themekey>geothermal</themekey>
+        <themekey>Great Basin</themekey>
+        <themekey>structural setting</themekey>
+        <themekey>structural discontinuity</themekey>
+      </theme>
+      <place>
+        <placekt>Geographic Names Information System (GNIS)</placekt>
+        <placekey>Great Basin</placekey>
+      </place>
+    </keywords>
+    <accconst>None.  Please see 'Distribution Info' for details.</accconst>
+    <useconst>None.  Users are advised to read the dataset's metadata thoroughly to understand appropriate use and data limitations. Acknowledgment of the U.S. Geological Survey is appreciated in any products derived from this database</useconst>
+    <ptcontac>
+      <cntinfo>
+        <cntperp>
+          <cntper>Drew L Siler</cntper>
+          <cntorg>U.S. Geological Survey, SOUTHWEST REGION</cntorg>
+        </cntperp>
+        <cntpos>Research Geologist</cntpos>
+        <cntaddr>
+          <addrtype>mailing address</addrtype>
+          <address>Mail Stop 989, 350 North Akron Road</address>
+          <city>Moffett Field</city>
+          <state>CA</state>
+          <postal>94035</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>650-439-2248</cntvoice>
+        <cntemail>dsiler@usgs.gov</cntemail>
+      </cntinfo>
+    </ptcontac>
+  </idinfo>
+  <dataqual>
+    <attracc>
+      <attraccr>No formal attribute accuracy tests were conducted</attraccr>
+    </attracc>
+    <logic>No formal attribute accuracy tests were conducted</logic>
+    <complete>Data set is considered complete for the information presented, as described in the abstract. Users are advised to read the rest of the metadata record carefully for additional details.</complete>
+    <posacc>
+      <horizpa>
+        <horizpar>No formal positional accuracy tests were conducted</horizpar>
+      </horizpa>
+      <vertacc>
+        <vertaccr>No formal positional accuracy tests were conducted</vertaccr>
+      </vertacc>
+    </posacc>
+    <lineage>
+      <procstep>
+        <procdesc>Use this file as the input fault file in the RunAll.m code</procdesc>
+        <procdate>20221121</procdate>
+        <proccont>
+          <cntinfo>
+            <cntperp>
+              <cntper>Drew L Siler</cntper>
+              <cntorg>U.S. Geological Survey, SOUTHWEST REGION</cntorg>
+            </cntperp>
+            <cntpos>Research Geologist</cntpos>
+            <cntaddr>
+              <addrtype>mailing address</addrtype>
+              <address>Mail Stop 989, 350 North Akron Road</address>
+              <city>Moffett Field</city>
+              <state>CA</state>
+              <postal>94035</postal>
+              <country>US</country>
+            </cntaddr>
+            <cntvoice>650-439-2248</cntvoice>
+            <cntemail>dsiler@usgs.gov</cntemail>
+          </cntinfo>
+        </proccont>
+      </procstep>
+    </lineage>
+  </dataqual>
+  <eainfo>
+    <detailed>
+      <enttyp>
+        <enttypl>Lines 14-3402</enttypl>
+        <enttypd>The top part of this file has a different format than the bottom, this is the record for the top (lines 14-3402)</enttypd>
+        <enttypds>Producer Defined</enttypds>
+      </enttyp>
+      <attr>
+        <attrlabl>none</attrlabl>
+        <attrdef>each row contains 'PRVTX'</attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv>
+          <udom>no data</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>none</attrlabl>
+        <attrdef>vertex number</attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv><rdom>
+            <rdommin>1</rdommin>
+            <rdommax>3389</rdommax>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>none</attrlabl>
+        <attrdef>x coordinate of the vertex (UTM NAD83 Z11N) in meters</attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv><rdom>
+            <rdommin>445086.9802
+</rdommin>
+            <rdommax>458798.2562
+</rdommax>
+            <attrunit>meters</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>none</attrlabl>
+        <attrdef>y coordinate of the vertex (UTM NAD83 Z11N) in meters</attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv><rdom>
+            <rdommin>4366000.00
+</rdommin>
+            <rdommax>4398000.00
+</rdommax>
+            <attrunit>meters</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>none</attrlabl>
+        <attrdef>z coordinate (NAVD88) in meters</attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv><rdom>
+            <rdommin>-1500</rdommin>
+            <rdommax>1500</rdommax>
+            <attrunit>m</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+    </detailed>
+    <detailed>
+      <enttyp>
+        <enttypl>Lines 3402-8075</enttypl>
+        <enttypd>The top part of this file has a different format than the bottom, this is the record for the bottom (lines 3402-8075)</enttypd>
+        <enttypds>Producer Defined</enttypds>
+      </enttyp>
+      <attr>
+        <attrlabl>none</attrlabl>
+        <attrdef>each row contains 'TRGL'</attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv>
+          <udom>no data</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>none</attrlabl>
+        <attrdef>vertex 1. the vertex number of the first vertex </attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv><rdom>
+            <rdommin>1</rdommin>
+            <rdommax>3389</rdommax>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>none</attrlabl>
+        <attrdef>vertex 2. the vertex number of the second vertex </attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv><rdom>
+            <rdommin>1</rdommin>
+            <rdommax>3389</rdommax>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>none</attrlabl>
+        <attrdef>vertex 3. the vertex number of the third vertex </attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv><rdom>
+            <rdommin>1</rdommin>
+            <rdommax>3389</rdommax>
+          </rdom>
+        </attrdomv>
+      </attr>
+    </detailed>
+    <overview>
+      <eaover>This metadata record is for the AccZoneFaults.ts file.
+The first 13 lines of the file are a header.
+Lines 14-4159 contain x,y, (NAD 83 UTM Z11N) coordinates in meters and z (NAVD88) in meters of the vertices of triangles that define the fault surface. Each line starts with PVRTX '#" which is the vertex number
+Lines 4160 to 9913 define the triangles that define the fault surface each line contains 'TRGL' #1 #2 #3 where the # are the vertex numbers defined in lines 14-4159.</eaover>
+      <eadetcit>none</eadetcit>
+    </overview>
+  </eainfo>
+  <distinfo>
+    <distrib>
+      <cntinfo>
+        <cntperp>
+          <cntper>GS ScienceBase</cntper>
+          <cntorg>U.S. Geological Survey</cntorg>
+        </cntperp>
+        <cntaddr>
+          <addrtype>mailing address</addrtype>
+          <address>Denver Federal Center, Building 810, Mail Stop 302</address>
+          <city>Denver</city>
+          <state>CO</state>
+          <postal>80225</postal>
+          <country>United States</country>
+        </cntaddr>
+        <cntvoice>1-888-275-8747</cntvoice>
+        <cntemail>sciencebase@usgs.gov</cntemail>
+      </cntinfo>
+    </distrib>
+    <distliab>Unless otherwise stated, all data, metadata and related materials are considered to satisfy the quality standards relative to the purpose for which the data were collected. Although these data and associated metadata have been reviewed for accuracy and completeness and approved for release by the U.S. Geological Survey (USGS), no warranty expressed or implied is made regarding the display or utility of the data for other purposes, nor on all computer systems, nor shall the act of distribution constitute any such warranty.</distliab>
+    <stdorder>
+      <digform><digtinfo>
+          <formname>Digital Data</formname>
+        </digtinfo>
+        <digtopt><onlinopt><computer><networka><networkr>https://doi.org/10.5066/xxxxxxxx</networkr></networka></computer></onlinopt></digtopt></digform>
+      <fees>None</fees>
+    </stdorder>
+  </distinfo>
+  <metainfo>
+    <metd>20221121</metd>
+    <metc>
+      <cntinfo>
+        <cntperp>
+          <cntper>Drew L Siler</cntper>
+          <cntorg>U.S. Geological Survey, SOUTHWEST REGION</cntorg>
+        </cntperp>
+        <cntpos>Research Geologist</cntpos>
+        <cntaddr>
+          <addrtype>mailing address</addrtype>
+          <address>Mail Stop 989, 350 North Akron Road</address>
+          <city>Moffett Field</city>
+          <state>CA</state>
+          <postal>94035</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>650-439-2248</cntvoice>
+        <cntemail>dsiler@usgs.gov</cntemail>
+      </cntinfo>
+    </metc>
+    <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+    <metstdv>FGDC-STD-001-1998</metstdv>
+  </metainfo>
+</metadata>
